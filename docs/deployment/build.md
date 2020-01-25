@@ -10,11 +10,19 @@ Required:
 * Most of this and the deploy stuff will I hope mostly eventually be done through CI but for now this documents the process.
 --------------------
 
+**General Info**
+
+The set of steps in this document involve just building a Docker image and pushing it to a repository. The image is
+the same regardless of the environment you intend to deploy it to. In other words, all environments (prod, stage, etc.)
+use the same image.
+
 The image will go into a docker registry called `babywearing` which is in a resource group called `midatlantic_babywearing_registries`.
 Resource groups on Azure are just logical groupings of resources. In our case, we will keep images in one group
 and each deployment (i.e. stage, prod, etc.) in another. 
 
-Do the below from the root of the Rails project.
+**Steps**
+
+* Perform these steps in a terminal in the root of the Rails project.
 
 * The below assumes defaults have been configured for `az` as follows:
 
