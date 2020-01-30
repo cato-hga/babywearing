@@ -12,4 +12,6 @@ tmp/*
 
 .idea
 
+deploy/deploy_hash
+
 

@@ -13,4 +13,5 @@ module ApplicationHelper
   def show_membership_links?
     !request.path.match(%r{/users/})
   end
+
 end

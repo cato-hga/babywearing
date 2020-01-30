@@ -22,7 +22,8 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 before_deploy:
-  - docker build -f Dockerfile.prod -t babywearing.azurecr.io/babywearing:prod .
+  provider: script
+  script: ./deploy/before_deploy.sh
 
 deploy:
   provider: script
