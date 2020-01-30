@@ -14,4 +14,7 @@ tmp/*
 
 deploy/deploy_hash
 
+config/master.key
+
+
 
