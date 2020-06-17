@@ -41,3 +41,4 @@ db/.DS_Store
 dump.rdb
 
 .envrc
+.tool-versions
